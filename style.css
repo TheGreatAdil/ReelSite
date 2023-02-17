@@ -1,0 +1,443 @@
+:root{
+  --text-color: #999999;
+  --border-color: #181818;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #080808;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* Navigation Menu */
+a{
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: "Raleway Regular", sans-serif;
+  font-weight: 900;
+  color: var(--text-color)
+}
+a:hover{
+  scale: 1.1;
+  color: white;
+}
+.logo{
+  font-size: 24px;
+  font-family: 'Beyond The Mountains', sans-serif;
+  letter-spacing: 1px;
+}
+nav{
+  display: flex;
+  width: 100%;
+  border: 1px solid var(--border-color);
+}
+nav .nav-section{
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+#nav-large-section{
+  display: flex;
+  flex-basis: calc(100% * (2 / 3));
+  z-index: 2;
+}
+#nav-social-section{
+  flex-grow: 1;
+}
+#nav-logo-section{
+  flex-basis: calc(100% / 3);
+  justify-content: flex-start;
+}
+#nav-logo-section{
+  font-size: 2.5rem;
+}
+#nav-link-section{
+  flex-basis: 50%;
+  gap: 6rem; 
+}
+#nav-social-section{
+  gap: 3rem;
+  font-size: 16px;
+}
+
+/* Main */
+main{
+  width: 100vw;
+  height: 100vh;
+  padding: 0% 5% 5% 5%;
+  border: 1px solid var(--border-color);
+}
+h1{
+  color: var(--text-color);
+  text-align: center;
+  font-family: 'Beyond The Mountains', sans-serif;
+  font-size: 128px;
+  letter-spacing: 1px;
+  word-spacing: 32px;
+  transition: 1s;
+}
+h1:hover{
+  scale: 1.05;
+  color: white;
+}
+.swashes{
+  color: var(--text-color);
+  text-align: center;
+  font-family: 'Sinisuka Swashes Regular', sans-serif;
+  font-size: 108px;
+  translate: 0% -75%;
+  transition: 1s;
+}
+.swashes:hover{
+  scale: 1.05;
+  color: white;
+}
+p{
+  color: var(--text-color);
+  text-align: center;
+  font-family: "Raleway Regular", sans-serif;
+  font-size: 32px;
+  padding: 0% 10%;
+  translate: 0% -30%;
+  transition: 1s;
+}
+p:hover{
+  scale:1.05;
+  color: white;
+}
+
+/* Showreel */
+#showreel{
+  width: 100vw;
+  height: 100vh;
+  padding: 2.5% 5% 55% 5%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+}
+.sub-title{
+  color: var(--text-color);
+  text-align: center;
+  font-family: "Beyond The Mountains", sans-serif;
+  font-size: 96px;
+  translate: 0% -30%;
+  transition: 1s;
+}
+.sub-title:hover{
+  scale: 1.05;
+  color:white;
+}
+h3{
+  margin-top: -2%;
+}
+.video-responsive {
+  position: relative;
+  width: 1280px;
+  overflow: hidden;
+  margin-top: 15%;
+  border: 1px solid #161616;
+  border-radius: 30px;
+}
+.video-responsive::before {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+.video-responsive-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Projects */
+#projects{
+  width: 100vw;
+  height: 100vh;
+  padding: 2.5% 5% 110% 5%;
+  border: 1px solid var(--border-color);
+}
+#projects h3{
+  margin-top: 0.01%;
+}
+#projects .projects{
+  display: block;
+  user-select: none;
+  margin-left: 21.75%;
+  translate: 0% -10%
+}
+.project-thumbnail{
+  margin-top: 2%;
+  width: 960px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 30px;
+  border: 1px solid #161616;
+}
+.info-layer{
+  margin-top: 2%;
+  border-radius: 30px;
+  width: 960px;
+  height: 405px;
+  background: linear-gradient(transparent, #080808);
+  position: absolute;
+  translate: 0% -107%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0%;
+  transition: 0.5s;
+}
+.info-layer:hover{
+ opacity: 100%;
+}
+.info-layer h3{
+  color: transparent;
+  font-family: "Beyond The Mountains", sans-serif;
+  font-size: 96px;
+  padding-top: 10%;
+  transition: 1s;
+}
+.info-layer:hover h3{
+  color: white;
+}
+h3:hover{
+  scale:1.1;
+}
+.info-layer p{
+  font-size: 24px;
+  padding-bottom: 10px;
+  color: transparent;
+}
+.info-layer:hover p{
+  color: var(--text-color)
+}
+.info-layer a{
+  padding-bottom: 10%;
+}
+
+/* Contact */
+#contact{
+  width: 100vw;
+  height: 100vh;
+  padding: 2.5% 5% 55% 5%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+}
+.row{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.row p{
+  display: flex;
+  text-align: left;
+  justify-content: left;
+}
+.row a{
+  font-size: 48px;
+  padding: 8px;
+}
+.contact{
+  width: 75vw;
+  justify-content: left;
+}
+.contact .fa-solid{
+  font-size: 48px;
+  padding: 0 16px 0 100px;
+  transition: 1s;
+}
+.line{
+  width: 100vw;
+  height: 40vh;
+  border-left: 1px solid var(--border-color);
+  left: calc(50vw - 1px);
+  translate: 0 -25%;
+  position: absolute;
+  }
+.social-media{
+  width: 25vw;
+  translate: -10vw 0;
+}
+.cv a{
+  font-size: 16px;
+  font-family: 'Raleway Light', sans-serif;
+}
+.btn{
+  display: block;
+  text-align: center;
+  font-family: 'Raleway Regular', sans-serif;
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 15%;
+  height: 100%;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #080808;
+  background: var(--text-color);
+  transition: 1s;
+}
+.btn:hover{
+  background: white;
+  color: #080808;
+  scale: 1.05;
+}
+
+/* Footer */
+.footer{
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p{
+  padding-top: 16px;
+ font-size: 12px;
+}
+
+/* Optimization */
+.unselectable{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+::-webkit-scrollbar{
+  width: 0px;
+}
+
+/* Responsive */
+@media(max-width: 1200px){ 
+  /* Navigation Menu */
+  #nav-social-section{
+    display: none;
+  }
+  #nav-link-section{
+    display: none;
+  }
+  .logo{
+    font-size: 48px;
+  }
+  #nav-logo-section{
+    flex-basis: 100%;
+    padding-left: 17.5%;
+  }
+
+  /* Main */
+  h1{
+    font-size: 48px;
+  }
+  .swashes{
+    font-size: 41px;
+  }
+  p{
+    font-size: 16px;
+    translate: 0 -10%;
+  }
+
+  /* Showreel */
+  #showreel{ 
+    width: 100vw;
+    padding: 2.5% 5% 15% 5%;
+  }
+  .sub-title{
+    font-size: 64px;
+    padding: 0%;
+  }
+  .video-responsive{
+    width: 360px;
+    margin-top: 32px;
+  }
+
+  /* Projects */
+  #projects{
+    padding: 2.5% 5% 215% 5%;
+  }
+  #projects .projects{
+    display: block;
+    user-select: none;
+    translate: -25% -10%;
+  }
+  .project-thumbnail{
+    margin-top: 2%;
+    width: 320px;
+    height: 135px;
+  }
+  .info-layer{
+    width: 320px;
+    height: 135px;
+  }
+  .info-layer h3{
+    font-size: 32px;
+    padding-top: 0%;
+    translate: 0% 100%;
+  }
+  .info-layer p{
+    font-size: 16px;
+    padding-bottom: 0%;
+  }
+  .info-layer a{
+    padding-bottom: 0%;
+    translate: 0% -50%;
+  }
+  
+  /* Contact */
+  #contact{
+    padding: 0% 5% 105% 5%;
+  }
+  .row a{
+    font-size: 32px;
+  }
+  .contact{
+    justify-content: center;
+  }
+  .contact .fa-solid{
+    font-size: 32px;
+    padding: 0 16px 0px;
+    translate: 0 -5px;
+  }
+  .line{
+    display: none;
+  }
+  .social-media{
+    display: flex;
+    width: 0vw;
+    translate: -75vw 25vh;
+  }
+  .cv{
+    translate: -60vw 10vh;
+  }
+  .cv a{
+    font-size: 16px;
+  }
+  .btn{
+    width: 150%;
+    height: 50%;
+  }
+
+  /* Footer */
+  .footer p{
+    padding-top: 0px;
+  }
+}
