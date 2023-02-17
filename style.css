@@ -3,6 +3,21 @@
   --border-color: #181818;
 }
 
+@font-face {
+  font-family: Raleway Regular;
+  src: url(content/Raleway.ttf);
+}
+
+@font-face {
+  font-family: Beyond The Mountains;
+  src: url(content/Beyond\ The\ Mountains.ttf);
+}
+
+@font-face {
+  font-family: Sinisuka Swashes Regular;
+  src: url(content/Sinisuka\ Swashes.ttf);
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -98,7 +113,7 @@ h1:hover{
   text-align: center;
   font-family: 'Sinisuka Swashes Regular', sans-serif;
   font-size: 108px;
-  translate: 0% -75%;
+  translate: 0% -150%;
   transition: 1s;
 }
 .swashes:hover{
@@ -111,7 +126,7 @@ p{
   font-family: "Raleway Regular", sans-serif;
   font-size: 32px;
   padding: 0% 10%;
-  translate: 0% -30%;
+  translate: 0% -45%;
   transition: 1s;
 }
 p:hover{
@@ -148,7 +163,7 @@ h3{
   position: relative;
   width: 1280px;
   overflow: hidden;
-  margin-top: 15%;
+  margin-top: 5%;
   border: 1px solid #161616;
   border-radius: 30px;
 }
@@ -180,7 +195,7 @@ h3{
   display: block;
   user-select: none;
   margin-left: 21.75%;
-  translate: 0% -10%
+  translate: 0% -17.5%
 }
 .project-thumbnail{
   margin-top: 2%;
@@ -280,7 +295,7 @@ h3:hover{
 }
 .cv a{
   font-size: 16px;
-  font-family: 'Raleway Light', sans-serif;
+  font-family: 'Raleway Regular', sans-serif;
 }
 .btn{
   display: block;
@@ -310,8 +325,8 @@ h3:hover{
   align-items: center;
 }
 .footer p{
-  padding-top: 16px;
- font-size: 12px;
+  padding-top: 25px;
+  font-size: 12px;
 }
 
 /* Optimization */
